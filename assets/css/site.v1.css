@@ -69,6 +69,7 @@ margin-top:clamp(24px,3.4vw,40px);border-top:1px solid rgba(255,255,255,.22)}
 .band--ink h2,.band--ink h3{color:#fff}
 .band--ink p{color:rgba(255,255,255,.78)}
 
+.hero em,.cta em,.band--ink em{color:#9BE7F1}
 .sect__head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:end;margin-bottom:clamp(22px,3vw,34px)}
 .sect__head p{max-width:46ch}
 .h2w{display:flex;flex-direction:column;gap:10px}
