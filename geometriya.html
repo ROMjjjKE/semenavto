@@ -1,0 +1,71 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Восстановление геометрии кузова — ООО «СемёнАвто», Волковыск</title><meta name="description" content="Стапель и контрольные точки: восстановление геометрии кузова после ДТП в Волковыске."><meta property="og:type" content="website"><meta property="og:title" content="Восстановление геометрии кузова — ООО «СемёнАвто», Волковыск"><meta property="og:description" content="Стапель и контрольные точки: восстановление геометрии кузова после ДТП в Волковыске."><meta property="og:image" content="assets/img/hero.jpg"><style>
+:root{--paper:#F8FAFB;--tint:#E9F2F4;--ink:#0F1417;--ink2:#48545C;--muted:#6C7B84;
+--acc:#0A6B78;--accb:#12A7BB;--bad:#B42318;--ok:#0F7B4F;--line:rgba(15,20,23,.14);
+--f-b:"Golos Text",system-ui,sans-serif;--f-m:"JetBrains Mono",ui-monospace,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;font-size:19px;overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-b);line-height:1.6;
+-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding-left:1.1em}
+h1,h2,h3{font-weight:700;line-height:1.06;letter-spacing:-.02em;overflow-wrap:anywhere}
+h1{font-size:clamp(2.1rem,5.4vw,4.2rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.1}
+h3{font-size:clamp(1.05rem,1.5vw,1.2rem);line-height:1.3;letter-spacing:-.01em}
+p{color:var(--ink2)}
+em{font-style:normal;color:var(--acc)}
+.mono{font-family:var(--f-m);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding-inline:clamp(16px,3vw,40px)}
+.topbar{background:var(--ink);color:#EAF2F4;font-size:.68rem}
+.topbar__in{display:flex;gap:18px;align-items:center;justify-content:space-between;min-height:36px;flex-wrap:wrap}
+.topbar span{opacity:.8}
+.topbar a{font-family:var(--f-m);font-size:.7rem;color:#fff}
+.hdr{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:60}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:baseline;gap:9px;min-width:0}
+.logo b{font-size:1.18rem;letter-spacing:-.02em;white-space:nowrap}
+.logo span{font-family:var(--f-m);font-size:.56rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.hdr__right{display:flex;align-items:center;gap:14px}
+.tel{font-family:var(--f-m);font-size:.92rem;font-weight:600;white-space:nowrap}
+.strip{border-bottom:1px solid var(--line);background:var(--paper);position:relative;z-index:55}
+.strip__in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.strip__in::-webkit-scrollbar{display:none}
+.strip__in a{flex:none;padding:14px 14px 13px;font-size:.79rem;font-weight:600;color:var(--ink2);
+border-bottom:3px solid transparent;white-space:nowrap}
+.strip__in a:hover{color:var(--ink);background:var(--tint)}
+.strip__in a[aria-current]{color:var(--acc);border-bottom-color:var(--acc)}
+.burger{display:none;width:44px;height:40px;border:1px solid var(--line);background:#fff;border-radius:2px;
+align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0}
+.burger i{display:block;width:18px;height:2px;background:var(--ink)}
+.hero{position:relative;min-height:clamp(560px,78vh,760px);display:flex;align-items:flex-end;
+background:var(--ink);color:#fff;overflow:hidden}
+.hero__bg{position:absolute;inset:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__bg::after{content:"";position:absolute;inset:0;background:
+linear-gradient(100deg,rgba(6,12,16,.94) 0%,rgba(6,12,16,.72) 52%,rgba(6,12,16,.12) 100%),
+linear-gradient(0deg,rgba(6,12,16,.7),transparent 55%)}
+.hero__in{position:relative;z-index:2;width:100%;padding-block:clamp(34px,5vw,60px)}
+.hero h1{color:#fff;max-width:20ch}
+.hero p{color:rgba(255,255,255,.88);max-width:46ch;margin-top:16px;font-size:1.02rem}
+.kick{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-m);font-size:.64rem;
+letter-spacing:.14em;text-transform:uppercase;color:#8FE3EE}
+.kick::before{content:"";width:26px;height:1px;background:currentColor}
+.hero__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:52px;padding:0 24px;border-radius:2px;
+background:var(--acc);color:#fff;font-weight:600;font-size:.95rem;border:1px solid var(--acc)}
+.btn:hover{background:#085460}
+.btn--line{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn--line:hover{background:rgba(255,255,255,.12)}
+.hero__figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.22);
+margin-top:clamp(24px,3.4vw,40px);border-top:1px solid rgba(255,255,255,.22)}
+.hero__figs>div{background:rgba(8,16,20,.55);padding:14px 14px 12px}
+.hero__figs b{display:block;font-family:var(--f-m);font-size:1.02rem;color:#fff}
+.hero__figs span{display:block;font-size:.72rem;color:rgba(255,255,255,.72);margin-top:3px}
+.band{padding-block:clamp(44px,6vw,84px);border-bottom:1px solid var(--line)}
+.band--tint{background:var(--tint)}
+.band--ink{background:var(--ink);color:#fff}
+.band--ink h2,.band--ink h3{color:#fff}
+.band--ink p{color:rgba(255,255,255,.78)}
+</style><link rel="stylesheet" href="assets/css/site.v1.css"><link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"></head><body><div class="topbar"><div class="wrap topbar__in"><span>Волковыск, ул. Жолудева, 74М</span><span>Автоэлектрика и геометрия кузова</span><a href="tel:+375333507120">+375 (33) 350-71-20</a></div></div><header class="hdr"><div class="wrap hdr__in"><a class="logo" href="index.html"><b>СемёнАвто</b><span>Волковыск</span></a><div class="hdr__right"><a class="tel" href="tel:+375333507120">+375 (33) 350-71-20</a><a class="btn" href="kontakty.html#zayavka" style="min-height:44px;padding:0 18px;font-size:.85rem">Заявка</a><button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i><i></i></button></div></div></header><div class="strip"><div class="wrap"><nav class="strip__in" aria-label="Страницы сайта"><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="startgen.html">Стартеры и генераторы</a><a href="provodka.html">Электропроводка</a><a href="geometriya.html" aria-current="page">Геометрия кузова</a><a href="stend.html">Как проверяем</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></nav></div></div><main><section class="hero"><div class="hero__bg"><img src="assets/img/hero.jpg" alt="ООО «СемёнАвто» — автоэлектрика в Волковыске"></div><div class="hero__in"><div class="wrap"><span class="kick">Геометрия кузова</span><h1 style="margin-top:14px">Геометрия кузова: <em>сначала размеры</em>, потом покраска</h1><p>Если после удара повело кузов, красить рано. Сначала контрольные точки и вытяжка на стапеле, потом сборка и покраска.</p><div class="hero__cta"><a class="btn" href="kontakty.html#zayavka">Записаться на замер</a><a class="btn btn--line" href="uslugi.html">Все услуги</a></div><div class="hero__figs"><div><b>Стапель</b><span>вытяжка</span></div><div><b>Точки</b><span>заводские размеры</span></div><div><b>Проёмы</b><span>зазоры</span></div><div><b>92 км</b><span>до Гродно</span></div></div></div></div></section><section class="band"><div class="wrap"><div class="sect__head"><div class="h2w"><span class="mono">01 · стапель</span><h2>Почему без стапеля не получается</h2></div><div><p>Кузов — это каркас с заводскими размерами. Если их не вернуть, двери и подвеска будут работать неправильно, сколько бы шпаклёвки ни положили.</p></div></div><div class="split"><div class="split__txt"><div class="rows"><div class="row"><div class="row__n">01</div><div><h3>Замер по контрольным точкам</h3><p>Сверяем диагонали и базовые размеры с заводскими. Видно, что именно повело и насколько.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">02</div><div><h3>Фиксация и вытяжка</h3><p>Кузов крепится за силовые элементы, усилие прикладывается в нужном направлении и дозированно.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">03</div><div><h3>Проверка проёмов</h3><p>После вытяжки проверяем зазоры и работу дверей, капота, крышки багажника.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">04</div><div><h3>Только потом кузовные работы</h3><p>Когда геометрия в норме, можно выправлять панели, шпаклевать и красить.</p></div><div class="row__a">↗</div></div></div></div><figure class="figure"><img src="assets/img/stend.jpg" alt="Автомобиль на стапеле в Волковыске" style="width:100%;aspect-ratio:4/3;object-fit:cover"><figcaption>Кузов на стапеле: фиксация за силовые элементы</figcaption></figure></div></div></section><section class="band "><div class="wrap"><div class="sect__head"><div class="h2w"><span class="mono">02 · признаки</span><h2>Когда пора на замер</h2></div><div><p>Пять признаков, при которых стоит проверить геометрию, даже если внешне машина выглядит целой.</p></div></div><div class="rows"><div class="row"><div class="row__n">01</div><div><h3>Двери закрываются с усилием</h3><p>Зазоры по контуру разной ширины, дверь цепляет стойку.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">02</div><div><h3>Машину тянет в сторону</h3><p>После удара появился увод, неравномерно изнашиваются шины.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">03</div><div><h3>Капот или багажник встал криво</h3><p>Проём перекошен, замок не совпадает с ответной частью.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">04</div><div><h3>Ремонт уже делали</h3><p>Кузов тянули без замера точек — проверяем, что получилось.</p></div><div class="row__a">↗</div></div><div class="row"><div class="row__n">05</div><div><h3>Удар в колесо или порог</h3><p>Задета силовая часть: без замера не понять масштаб.</p></div><div class="row__a">↗</div></div></div></div></section><section class="cta"><div class="wrap cta__in"><div><h2>Пришлите фото повреждения</h2><p>По фото сориентируем, нужен ли стапель или достаточно кузовного ремонта.</p></div><div><a class="cta__tel" href="tel:+375333507120">+375 (33) 350-71-20</a><a class="btn" style="margin-top:12px" href="https://wa.me/375333507120">Написать в WhatsApp</a></div></div></section></main><footer class="foot"><div class="wrap"><div class="foot__in"><div><h4>ООО «СемёнАвто»</h4><p style="color:rgba(255,255,255,.8);font-size:.88rem;max-width:34ch">Ремонт стартеров, генераторов и автоэлектрооборудования, восстановление геометрии кузова. Волковыск и Волковысский район, 92 км до Гродно.</p><p style="color:rgba(255,255,255,.8);font-size:.88rem;margin-top:12px">Волковыск, ул. Жолудева, 74М</p></div><div><h4>Страницы</h4><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="startgen.html">Стартеры и генераторы</a><a href="provodka.html">Электропроводка</a><a href="geometriya.html">Геометрия кузова</a><a href="stend.html">Как проверяем</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></div><div><h4>Связь</h4><a href="tel:+375333507120">+375 (33) 350-71-20</a><a href="https://wa.me/375333507120">WhatsApp</a><a href="viber://chat?number=%2B375333507120">Viber</a><a href="https://t.me/+375333507120">Telegram</a><a href="politika.html">Политика обработки данных</a></div></div><div class="foot__low"><span>© ООО «СемёнАвто», Волковыск</span><span>Сайт носит информационный характер, цены уточняйте по телефону</span></div></div></footer><div class="fbar"><a href="tel:+375333507120">Позвонить</a><a href="https://wa.me/375333507120">WhatsApp</a><a href="viber://chat?number=%2B375333507120">Viber</a><a href="https://t.me/+375333507120">Telegram</a></div><div class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-label="Меню"><div class="drawer__top"><span class="mono">Меню</span><button class="drawer__close" id="drawerClose" aria-label="Закрыть">✕</button></div><nav><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="startgen.html">Стартеры и генераторы</a><a href="provodka.html">Электропроводка</a><a href="geometriya.html" aria-current="page">Геометрия кузова</a><a href="stend.html">Как проверяем</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a><a href="politika.html">Политика обработки данных</a></nav><div class="drawer__foot"><a class="btn" href="tel:+375333507120">+375 (33) 350-71-20</a><a class="btn btn--line" style="color:var(--ink);border-color:var(--line)" href="https://wa.me/375333507120">WhatsApp</a></div></div><script src="assets/js/main.v1.js"></script></body></html>
